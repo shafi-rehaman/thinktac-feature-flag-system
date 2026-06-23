@@ -154,70 +154,75 @@ This is the most important improvement because **user-stable assignment is a pre
 
 ## Part 3 — Critique of thinktac.com
 
+### Page Reviewed
+
+ThinkTac Homepage
+
 ### UX Observation 1
 
-The hero section introduces several concepts in a short space, including platform engineering, AI, and software development services.
+The homepage immediately communicates that ThinkTac focuses on science and mathematics education through hands-on and experiential learning. However, the page appears to target multiple audiences at once, including schools, teachers, students, and community centres.
 
-As a first-time visitor, I was not immediately sure which service was the primary offering or which audience the company was targeting. The page communicates capability, but it takes additional reading before understanding exactly what business problem ThinkTac solves.
+As a first-time visitor, I understood what ThinkTac teaches, but it took longer to understand who the primary customer is and what action they are expected to take next. The navigation contains sections for Schools, Teachers, Programmes, and CBSE Books, while the content discusses pedagogy, curriculum integration, and learning outcomes. This creates several possible user journeys without clearly prioritising one.
 
-This matters because many visitors decide within a few seconds whether a website is relevant to them.
+I would make the primary audience more explicit in the hero section and tailor the primary call-to-action to that audience.
 
 ---
 
 ### UX Observation 2
 
-Several sections contain relatively large blocks of text with similar visual weight.
+The homepage contains a significant amount of educational content before reaching a strong conversion point.
 
-The information is useful, but it requires more effort to scan than necessary. When browsing a services website, users often look for quick answers to questions such as:
+Sections such as curriculum integration, conceptual mastery, science literacy, and learning methodology provide useful information, but they create a long scrolling experience before a visitor encounters a compelling reason to take action.
 
-- What does this company do?
-- Who is it for?
-- What outcomes can I expect?
+For a visitor evaluating the platform for the first time, it may be difficult to quickly answer:
 
-Using shorter summaries, clearer headings, and more emphasis on customer outcomes would make these answers easier to find.
+- What makes ThinkTac different?
+- Why should I trust this approach?
+- What results have schools or students achieved?
+
+Introducing short case studies, measurable outcomes, testimonials, or success metrics earlier on the page would strengthen credibility and reduce the amount of reading required before reaching a decision.
 
 ---
 
 ### UX Observation 3
 
-Some calls-to-action could be more action-oriented and specific.
+The visual hierarchy is generally clean, but some important content competes for attention.
 
-For example, visitors may respond more strongly to actions such as:
+For example, the homepage contains curriculum information, learning philosophy, interactive content previews, illustrations, certification logos, and navigation links within the same viewing experience. While each element is individually useful, there are moments where it is not immediately obvious which information is most important.
 
-- Request a Platform Assessment
-- Book a Consultation
-- View Case Studies
-
-These provide a clearer expectation of what happens after the click and help users move through the site with more confidence.
+I would create a stronger hierarchy by emphasising key outcomes and simplifying supporting content. This would help visitors focus on the most important messages before exploring additional details.
 
 ---
 
 ### Technical Observation
 
-The site delivers a modern and responsive experience, which suggests significant client-side JavaScript usage.
+The homepage appears to be content-rich, with multiple illustrations, educational previews, logos, and embedded visual elements.
 
-From a platform engineering perspective, I would investigate:
+From a platform engineering perspective, I would evaluate:
 
 - Largest Contentful Paint (LCP)
+- Image optimisation strategy
+- Lazy loading of below-the-fold content
 - JavaScript bundle size
-- Image loading strategy
-- Lighthouse performance metrics
+- Core Web Vitals performance metrics
 
-Even small improvements in loading performance can improve user experience and search visibility, particularly for first-time visitors on slower networks.
+Many visitors to educational websites access them on mobile devices or slower networks, making frontend performance particularly important. Optimising image delivery and reducing unnecessary client-side work could improve both user experience and search engine visibility.
 
 ---
 
 ### Suggested Improvement
 
-If I were improving the homepage, I would start with the hero section.
+The first improvement I would make is strengthening the hero section.
 
-I would make the value proposition more explicit by answering three questions immediately:
+The current hero successfully explains the educational philosophy, but it could more clearly communicate:
 
-- Who is the target customer?
-- What problem does ThinkTac solve?
-- What outcome can customers expect?
+- Who the product is for
+- What problem it solves
+- What measurable outcomes it delivers
 
-This would help visitors determine relevance more quickly and reduce the likelihood of them leaving before exploring the rest of the site.
+For example, highlighting improvements in student engagement, conceptual understanding, or teacher effectiveness near the top of the page would immediately communicate value and help visitors determine whether the platform is relevant to their needs.
+
+This would reduce cognitive load, improve clarity, and create a stronger first impression for new visitors.
 
 ---
 
