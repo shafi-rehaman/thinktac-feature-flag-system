@@ -155,22 +155,81 @@ This is the most important improvement because **user-stable assignment is a pre
 ## Part 3 — Critique of thinktac.com
 
 *(Reviewed: thinktac.com homepage, June 2026)*
+# Part 3 – ThinkTac Website Critique
 
-**UX / Content issues**
+## Page Reviewed
 
-1. **The hero section doesn't answer "what does ThinkTac do?"** within the first viewport. The headline is abstract and the subtext does not concretely describe the product. A user landing from a job board or referral link has to scroll or click to understand what they're looking at. Fix: replace the abstract headline with a one-sentence value proposition — who it's for, what it does, what outcome it produces.
+ThinkTac Homepage
 
-2. **CTAs are vague.** Buttons labelled "Get started" or "Learn more" appear multiple times without differentiating what action they lead to. A user reading the page cannot predict whether clicking will open a sign-up form, a product demo, or another marketing page. Fix: label buttons with the outcome — "Start your free trial", "Book a demo", "See pricing" — so users self-select correctly.
+### UX Observation 1
 
-3. **No social proof above the fold.** For a platform product selling to teams or enterprises, the absence of customer logos, testimonials, or usage numbers in the first screen increases drop-off. Even three recognisable logos immediately signals legitimacy.
+The homepage communicates several capabilities and services, but the primary value proposition is not immediately clear to a first-time visitor.
 
-**Technical / Performance observation**
+A visitor can quickly understand that ThinkTac works in software and AI-related domains, but it takes additional reading to determine exactly what problem the company solves and for whom.
 
-Opening the Network tab shows that the page loads several render-blocking JavaScript bundles before first contentful paint. At least one large JS chunk (likely the main app bundle) is not code-split, meaning users on slower connections wait for code they may not need (e.g. dashboard or auth logic) before seeing any content. Using `next/dynamic` or route-based code splitting, combined with moving non-critical scripts to `defer` or `async`, would measurably improve LCP.
+This increases cognitive load and may reduce engagement from visitors who make decisions quickly.
 
-**One specific fix I would tackle first**
+---
 
-Rewrite the hero headline and add a descriptive subtitle. This is a zero-infrastructure change (pure copy edit), takes under an hour, and directly addresses the highest-funnel problem: users bouncing before they understand the product. Every other improvement — faster load, better CTAs — only matters if users first understand what they're evaluating.
+### UX Observation 2
+
+Several content sections contain relatively large blocks of text.
+
+While informative, they require more effort to scan and understand.
+
+Users generally benefit from:
+
+* Shorter summaries
+* Stronger visual hierarchy
+* Clear outcome-focused messaging
+
+These changes can improve readability and help visitors identify relevant information faster.
+
+---
+
+### UX Observation 3
+
+The calls-to-action could be more specific.
+
+Buttons that clearly communicate the next step often improve conversion rates.
+
+Examples include:
+
+* Request a Platform Assessment
+* Book a Consultation
+* Explore Case Studies
+
+These actions set clearer expectations than generic calls-to-action.
+
+---
+
+### Technical Observation
+
+The website appears to rely heavily on modern client-side JavaScript.
+
+While the experience feels smooth, I would evaluate:
+
+* Largest Contentful Paint (LCP)
+* Total JavaScript bundle size
+* Image optimization
+* Lighthouse performance metrics
+
+Improving performance can positively impact both user experience and search visibility.
+
+---
+
+### Suggested Improvement
+
+The first improvement I would make is strengthening the homepage hero section.
+
+I would clearly answer:
+
+* Who the company helps
+* What problem it solves
+* What measurable outcome customers can expect
+
+This would help visitors determine relevance more quickly and reduce bounce rates.
+
 
 ---
 
