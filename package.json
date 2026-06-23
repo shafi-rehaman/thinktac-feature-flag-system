@@ -1,0 +1,17 @@
+{
+  "name": "feature-flags",
+  "version": "1.0.0",
+  "description": "Minimal feature flag system backed by Firebase Firestore",
+  "scripts": {
+    "demo": "ts-node scripts/demo.ts",
+    "emulator": "firebase emulators:start --only firestore"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
