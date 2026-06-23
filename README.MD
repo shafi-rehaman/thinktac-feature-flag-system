@@ -154,13 +154,6 @@ This is the most important improvement because **user-stable assignment is a pre
 
 ## Part 3 — Critique of thinktac.com
 
-*(Reviewed: thinktac.com homepage, June 2026)*
-# Part 3 – ThinkTac Website Critique
-
-## Page Reviewed
-
-ThinkTac Homepage
-
 ### UX Observation 1
 
 The homepage communicates several capabilities and services, but the primary value proposition is not immediately clear to a first-time visitor.
